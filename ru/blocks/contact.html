@@ -1,0 +1,31 @@
+
+
+
+		<h1 class='contact-title'>Отправьте нам сообщение:</h1><br>
+	
+	
+
+ <form class="contact_form" action="../functions/contact-form-actions.php" method="post">
+                        <p>
+                            <label for="name">Имя:</label>
+                            <input type="text"  name="name" placeholder="Введите Ваше имя" required />
+                        </p>
+                        <p>
+                            <label for="email">Email:</label>
+                            <input type="email" name="email" placeholder="Введите Ваш электронный адрес" required />
+                            <span class="form_hint">Корректный формат "name@domainname"</span>
+                        </p>
+                        <p>
+                            <label for="sub">Тема письма:</label>
+                            <input type="text"  name="sub" placeholder="Введите тему письма" required />
+                        </p>
+                        <p>
+                            <label for="message">Текст сообщения:</label>
+                            <textarea name="message" cols="40" rows="10" required ></textarea>
+                        </p>
+                        <input name="bezspama" type="text" style="display:none" value="" />
+                        <p>
+                            <button class="submit" type="submit">Отправить</button>
+                        </p>
+                    </form>
+
